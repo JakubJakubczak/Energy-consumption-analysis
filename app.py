@@ -140,7 +140,7 @@ st.plotly_chart(plot_anomalies(df_anomaly), use_container_width=True)
 
 # ── Forecast ───────────────────────────────────────────────────────────────
 st.header("Forecast")
-forecast_method = st.sidebar.selectbox("Forecast method", ["linear_regression", "moving_average"])
+forecast_method = st.sidebar.selectbox("Forecast method", ["gradient_boosting", "moving_average"])
 horizon = st.sidebar.selectbox("Forecast horizon (days)", [7, 14, 30])
 
 forecast_df = forecast(df, method=forecast_method, horizon_days=horizon)
