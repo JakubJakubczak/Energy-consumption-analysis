@@ -37,7 +37,7 @@ pip install -r requirements.txt
 ## Uruchomienie / Running
 
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 ## Dane / Data
@@ -52,3 +52,40 @@ Format: CSV z kolumnami timestamp + zużycie energii (kWh).
 - matplotlib, seaborn, plotly — wizualizacja
 - scikit-learn, statsmodels — prognoza i wykrywanie anomalii
 - Streamlit — interfejs webowy
+
+## Screenshots
+
+### Main View
+Data preview with filtering by date range, missing value handling and aggregation settings.
+
+![Main View](docs/screenshots/main_view.png)
+
+### Daily Consumption
+Daily aggregated energy consumption chart (average and total).
+
+![Daily Consumption](docs/screenshots/daily_consumption.png)
+
+### Weekday Comparison
+Comparison of average hourly consumption between selected days of the week.
+
+![Weekday Comparison](docs/screenshots/weekday_comparison.png)
+
+### Daily Profile (Workday vs Weekend)
+Average consumption by hour with workday/weekend split.
+
+![Daily Profile](docs/screenshots/daily_profile.png)
+
+### Statistics & Period Comparison
+Basic statistics (mean, median, min, max, std) and period-over-period comparison.
+
+![Statistics & Period Comparison](docs/screenshots/statistics_period_comparision.png)
+
+### Anomaly Detection
+Detected anomalies highlighted on the consumption chart with configurable threshold.
+
+![Anomaly Detection](docs/screenshots/anomaly_detection.png)
+
+### Forecast & Export
+Energy consumption forecast and CSV export of results.
+
+![Forecast & Export](docs/screenshots/forecast_export_results.png)
